@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+ul {
+    list-style: none;
+}
+:root {
+    /* ============== colors* ============== */
+    --primary-color: #6c63d0;
+    --secondary-color: #82d9df;
+    --third-color: #f59e99;
+    --fourth-color: #fffc57;
+
+    --primary-color-c: #3d4b74;
+
+    --bg-color: #ebecf0;
+
+    --font-color: #000;
+    --font-color-w: #fff;
+
+    /* ============== backdrops* ============== */
+    --backdrop-primary: #6c63d049;
+    --backdrop-secondary: #82d9df4b;
+    --backdrop-third: #f59e994b;
+    --backdrop-fourth: #fffc574b;
+
+    /* ============== transition* ============== */
+    --normal-transition: all 0.3s ease-in-out;
+    --normal-transition-transform: transform 0.3s ease-in-out;
+    --normal-trasition-linear: all 0.3s linear;
+}
+.btn {
+    padding: 0.5rem 2rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: var(--font-color-w);
+    outline: none;
+    border: none;
+    transition: var(--normal-transition);
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--primary-color-c);
+}
+.btn__out {
+    padding: calc(0.5rem - 2px) calc(2rem - 2px);
+    background-color: transparent;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary-color-c);
+    outline: none;
+    border: 2px solid var(--primary-color-c);
+    transition: var(--normal-transition);
+    cursor: pointer;
+}
+.btn__out:hover {
+    background-color: var(--primary-color-c);
+    color: var(--font-color-w);
+
+}
+
+.btn__empty {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-right: 2px solid var(--contrast-primary);
+    border-bottom-right-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.3rem;
+}
+.subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.subtitle__info {
+    
+    display: none;
+}
+.subtitle__info.active {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    display: initial;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+.input__error{
+    color: red;
+    font-size: .7rem;
+}
+.highlight{
+    color: var(--primary-color);
+}

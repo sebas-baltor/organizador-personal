@@ -1,0 +1,48 @@
+.login {
+    height: calc(100vh - 4rem);
+    margin-top: 4rem;
+    margin-inline: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__create {
+        padding: 1rem;
+        background: linear-gradient(
+            45deg,
+            var(--backdrop-secondary),
+            var(--backdrop-primary)
+        );
+        border-radius: 1rem;
+        display: inline-block;
+        h1 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            input {
+                outline: none;
+                border: 1px solid transparent;
+                border-radius: 1rem;
+                padding: 0.5rem;
+                &:focus {
+                    border: 1px solid var(--primary-color);
+                }
+            }
+        }
+        .form__action{
+            margin-top: 1rem;
+            display:flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

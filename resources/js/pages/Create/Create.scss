@@ -1,0 +1,24 @@
+.create {
+    margin-top: 4rem;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__items{
+        &--show{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 1rem;
+        }
+    }
+}

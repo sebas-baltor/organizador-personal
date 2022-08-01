@@ -1,0 +1,45 @@
+
+.navbar {
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    &__logo {
+        color: var(--primary-color);
+    }
+    &__link {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    &__item {
+        cursor: pointer;
+        &:hover > a {
+            color: var(--primary-color-c);
+        }
+    }
+}
+@keyframes shake {
+    15% {
+        transform: rotate(6deg);
+    }
+    30% {
+        transform: rotate(-6deg);
+    }
+    45% {
+        transform: rotate(6deg) scale3d(1.1, 1.1, 1);
+    }
+    70% {
+        transform: rotate(-6deg);
+    }
+    75% {
+        transform: rotate(6deg);
+    }
+}
